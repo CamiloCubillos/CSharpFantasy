@@ -1,0 +1,34 @@
+﻿<Window x:Class="TheCSharpFantasy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheCSharpFantasy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label>Nombre del jugador: </Label>
+        <TextBox Name="textbox_nombreJugador" Grid.Column="1" Grid.ColumnSpan="3"></TextBox>
+
+        <Button Grid.Row="1" Grid.Column="0" Content="Guerrero" Click="Seleccionar_Clase"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Content="Mago" Click="Seleccionar_Clase"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Content="Arquero" Click="Seleccionar_Clase"></Button>
+        <Button Grid.Row="1" Grid.Column="3" Content="Asesino" Click="Seleccionar_Clase"></Button>
+
+        <Button Grid.Row="2" Grid.ColumnSpan="4" Click="Iniciar_Pelea">¡PELEAR!</Button>
+
+    </Grid>
+</Window>
